@@ -6,6 +6,7 @@ description: Security architecture patterns for Appwrite TablesDB and Databases.
 # Appwrite DB Security Design
 
 Use this skill for security-first database architecture on Appwrite.
+Use `security/operations-key-dependency-hardening/SKILL.md` together with this skill for runtime operations, key lifecycle, and dependency vulnerability governance.
 
 ## Security Objectives
 

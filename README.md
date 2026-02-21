@@ -10,6 +10,7 @@ It is designed for teams and builders who want consistent implementation pattern
 - React Native
 - Web JavaScript and TypeScript
 - Security architecture
+- Security operations and key management
 - Supabase to Appwrite migration
 
 ### Project Goal
@@ -28,6 +29,7 @@ These skills help you:
 - `core/`: shared Appwrite integration baseline
 - `frameworks/`: framework-specific implementation skills
 - `security/`: database and permission hardening skill
+- `security/operations-key-dependency-hardening/`: security operations, key lifecycle, and dependency vulnerability skill
 - `architecture/`: fullstack system design skill
 - `migrations/`: Supabase migration workflow skill
 
@@ -41,6 +43,7 @@ These skills help you:
 - React Native
 - Web JavaScript / TypeScript
 - 보안 아키텍처
+- 보안 운영 및 키 관리
 - Supabase 에서 Appwrite 로 마이그레이션
 
 ### 프로젝트 목표
@@ -59,6 +62,6 @@ These skills help you:
 - `core/`: 공통 Appwrite 개발 기준
 - `frameworks/`: 프레임워크별 구현 스킬
 - `security/`: DB/권한 보안 강화 스킬
+- `security/operations-key-dependency-hardening/`: 보안 운영, 키 수명주기, 의존성 취약점 대응 스킬
 - `architecture/`: 풀스택 시스템 설계 스킬
 - `migrations/`: Supabase 마이그레이션 스킬
-

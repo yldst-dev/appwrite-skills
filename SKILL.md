@@ -16,6 +16,7 @@ Use this skill as the entry point for Appwrite work. It routes to focused sub-sk
 - End-to-end fullstack architecture.
 - Supabase to Appwrite migration.
 - Production DB security design.
+- Security operations, key management, and dependency vulnerability control.
 
 ## Skill Routing
 
@@ -25,6 +26,7 @@ Use this skill as the entry point for Appwrite work. It routes to focused sub-sk
 - Web TS/JS SDK usage: read `frameworks/web-ts-js/SKILL.md`.
 - Multi-client system design: read `architecture/fullstack-architecture/SKILL.md`.
 - Database and permission hardening: read `security/db-security-design/SKILL.md`.
+- Security operations and supply-chain hardening: read `security/operations-key-dependency-hardening/SKILL.md`.
 - Supabase migration planning or execution: read `migrations/supabase-to-appwrite/SKILL.md`.
 - General Appwrite primitives and API mode selection: read `core/development/SKILL.md`.
 
@@ -32,7 +34,7 @@ Use this skill as the entry point for Appwrite work. It routes to focused sub-sk
 
 1. Load `core/development/SKILL.md` for shared API and permissions baseline.
 2. Load one framework skill matching the runtime.
-3. If project is production or multi-tenant, also load security and architecture skills.
+3. If project is production or multi-tenant, load both security skills and architecture skill.
 4. If migration is in scope, load migration skill before implementation changes.
 
 ## Non-Negotiable Rules
@@ -41,10 +43,10 @@ Use this skill as the entry point for Appwrite work. It routes to focused sub-sk
 - Privileged writes run on Server SDK or Functions.
 - Row security and least privilege are required for sensitive tables.
 - Platforms must be allowlisted for web and mobile clients.
+- Dependency and secret scanning must run continuously in CI and repository settings.
 - Migration cutover requires data, auth, and permission validation before go-live.
 
 ## Official Doc Baseline
 
 - Verified against Appwrite docs pages for quick starts, SSR auth, quick-start references, and Supabase migration.
 - Verification date: 2026-02-18.
-
