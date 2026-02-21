@@ -84,6 +84,13 @@ Use this skill for production-grade security governance beyond basic app impleme
 3. Preserve forensic evidence from Appwrite activity logs and external logging pipeline.
 4. Run incident drills and permission regression tests on a regular cadence.
 
+## Repository Automation Defaults
+
+- Use `.github/workflows/security-ci.yml` as the default CI security baseline.
+- Use `.github/dependabot.yml` to keep Actions dependencies updated.
+- Use `.github/pull_request_template.md` to enforce review-time security checks.
+- Use `SECURITY_GATES.md` as readiness scoring criteria with evidence-backed assessment.
+
 ## References
 
 - https://appwrite.io/docs/advanced/platform/api-keys
@@ -105,4 +112,3 @@ Use this skill for production-grade security governance beyond basic app impleme
 - https://bun.sh/docs/pm/cli/audit
 - https://google.github.io/osv-scanner/usage/
 - https://google.github.io/osv-scanner/usage/scan-image
-

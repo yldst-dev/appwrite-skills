@@ -33,6 +33,13 @@ These skills help you:
 - `architecture/`: fullstack system design skill
 - `migrations/`: Supabase migration workflow skill
 
+### Security Automation
+
+- `.github/workflows/security-ci.yml`: secret scan, vulnerability/misconfiguration scan, dependency review
+- `.github/dependabot.yml`: automated GitHub Actions dependency updates
+- `.github/pull_request_template.md`: pull-request security checklist
+- `SECURITY_GATES.md`: readiness gates and scoring model
+
 ## 한국어
 
 이 저장소는 실전 풀스택 개발을 위한 Appwrite 스킬 모음입니다.
@@ -65,3 +72,10 @@ These skills help you:
 - `security/operations-key-dependency-hardening/`: 보안 운영, 키 수명주기, 의존성 취약점 대응 스킬
 - `architecture/`: 풀스택 시스템 설계 스킬
 - `migrations/`: Supabase 마이그레이션 스킬
+
+### 보안 자동화
+
+- `.github/workflows/security-ci.yml`: 시크릿 스캔, 취약점/설정오류 스캔, 의존성 리뷰
+- `.github/dependabot.yml`: GitHub Actions 의존성 자동 업데이트
+- `.github/pull_request_template.md`: PR 보안 체크리스트
+- `SECURITY_GATES.md`: 보안 준비도 게이트와 점수 기준
