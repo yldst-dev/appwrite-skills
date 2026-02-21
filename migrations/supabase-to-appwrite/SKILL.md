@@ -46,6 +46,14 @@ Use this skill when moving an existing Supabase project to Appwrite.
 - Move privileged write paths to server-only clients.
 - Rotate all service keys before production launch.
 
+## Supabase RLS Translation Checklist
+
+- Treat Supabase RLS policies as non-portable logic and redesign them explicitly for Appwrite.
+- Replace SQL policy predicates with row permissions plus server-side business-rule checks.
+- Ensure table-level create permissions are tight, then assign row-level read/update/delete permissions on creation.
+- Validate every prior RLS rule with negative tests for cross-tenant and cross-role access.
+- Keep admin and batch-write paths on server SDK with explicit tenant and ownership checks.
+
 ## Cutover Strategy
 
 1. Freeze source writes during final sync window.
@@ -64,6 +72,6 @@ Use this skill when moving an existing Supabase project to Appwrite.
 - https://appwrite.io/docs/advanced/migrations
 - https://appwrite.io/docs/advanced/migrations/supabase
 - https://appwrite.io/docs/products/databases/permissions
+- https://appwrite.io/docs/products/databases/rows
 - https://appwrite.io/docs/advanced/platform/permissions
 - https://appwrite.io/docs/advanced/platform/api-keys
-

@@ -59,6 +59,7 @@ Use this skill when building, reviewing, or debugging Appwrite-based backends an
 - Permissions are grant-based and private by default.
 - Table-level and row-level permissions are additive; one matching grant is enough to access a row.
 - Row-level controls require row security enabled on the table.
+- Row creation permission is controlled by table-level create grants; row-level permissions govern existing-row access.
 - If created from Server SDK or Console without explicit permissions, resources default to no user access.
 - If created from Client SDK without explicit permissions, creator gets default read/update/delete on that resource.
 - Avoid broad `Role.any()` on mutable resources.
